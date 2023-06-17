@@ -1,1 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:5rem;
+}
+.logo_container{
+    display:flex
+}
+.logo_container>img{
+    height: 5rem;
+}
+.logo_container>span{
+    font-family: inherit;
+    font-size: 1.7rem;
+    margin: auto 0;
+}
+#switch_btn{
+    font-family: inherit;
+    margin: auto 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(30,30,30);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.search_container{
+  text-align: center;
+  width:55%;
+  margin: 0 auto;
+  margin-top: 5%;
+  
+}
+.search{
+    display:flex
+}
+.search_container>label{
+    font-family: inherit;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+#search_input{
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(220, 220, 220);
+    height: 30px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 0 0 45px;
+}
+#search_btn{
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 35px;
+    margin-left: 10px;
+}
+.wordcard_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto 20px;
+    margin-top: 20px;
+}
+.wordcard{
+    background-color: rgb(220, 220, 220);
+    width: 220px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 10px;
+}
+.wordcard>div{
+    height: 240px;
+    overflow: hidden;
+    margin: 10px;
+}
+.delete_btn{
+    width: 30px;
+    margin-left: 185px;
+    cursor: pointer;
+}
+.wordcard .card_head{
+    margin: 0;
+}
+.wordcard .card_body{
+    font-size: 1rem;
+    font-weight: 700;
+}
 
+.disabled{
+    display: none;
+}
+.error_msg{
+    color: brown;
+}

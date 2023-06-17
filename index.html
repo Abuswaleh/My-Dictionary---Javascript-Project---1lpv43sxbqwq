@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css"> 
+</head>
+<body>
+    <main>
+        <nav class="navbar">
+            <div class="logo_container">
+                <img src="https://cdn.pixabay.com/photo/2016/03/31/18/27/book-1294379_1280.png" alt="books logo">
+                <span>My DICTIONARY App</span>
+            </div>
+            <button id="switch_btn">HISTORY</button>
+        </nav>
 
+        <section class="container">
+            <section class="search_container">
+                <label class="label" for="search_input">
+                    Search for new word
+                </label>
+                <div class="search">
+                    <input type="text" id="search_input">
+                    <img id="search_btn" src="/resource/search.png" border="0"/>
+                </div>
+                <p class="error_msg disabled">"<span></span>" is not exist.</p>
+            </section>
+
+            <section class="wordcard_container">
+            <!-- word cards will be added hare -->
+            </section>
+
+        </section>
+    </main>
+    <script src = "/App.js"></script>
+</body>
+</html>
